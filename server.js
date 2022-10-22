@@ -46,7 +46,7 @@ app.post('/customer_query', (req, res)=>{
         
         var mailOptions = {
             from: 'taruntestemail057@gmail.com',
-            to: 'raikwartarun72@gmail.com',
+            to: 'mastermanagementassociate@gmail.com',
             subject: "Customer Query",
             text: ('Name : ' + name + '\n' + 'contact no. : ' + '\n' + phone + '\n' + 'Email : ' + email + '\n' + 'message : ' + message)
         };
