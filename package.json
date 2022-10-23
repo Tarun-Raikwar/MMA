@@ -1,0 +1,24 @@
+{
+  "name": "mma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarun-Raikwar/Master_management_associate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tarun-Raikwar/Master_management_associate/issues"
+  },
+  "homepage": "https://github.com/Tarun-Raikwar/Master_management_associate#readme"
+}
