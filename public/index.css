@@ -22,7 +22,7 @@ nav{
 #navbar{
     /* border: 2px solid red; */
     background-color: white;
-    padding: 5px 10px;
+    padding: 5px 5px;
     box-shadow: 1px 1px 10px rgb(117, 114, 114);
     display: flex;
     justify-content: space-between;
