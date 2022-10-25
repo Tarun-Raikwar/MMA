@@ -22,7 +22,7 @@ nav{
 #navbar{
     /* border: 2px solid red; */
     background-color: white;
-    padding: 5px 30px;
+    padding: 5px 10px;
     box-shadow: 1px 1px 10px rgb(117, 114, 114);
     display: flex;
     justify-content: space-between;
@@ -206,15 +206,14 @@ nav{
 /* ************************************** slider ********************************** */
 
 #slider{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#slider img{
+/* #slider img{
     margin: auto;
-}
+} */
 
 
 /* ************************************ contact Us ********************************* */
