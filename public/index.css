@@ -164,7 +164,6 @@ nav{
 /* ******************************************* intro ************************************** */
 
 #intro{
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,10 +173,8 @@ nav{
 }
 
 #intro p{
-    width: 700px;
     text-align: center;
-    margin: 20px 0px;
-    /* color: white; */
+    margin: 20px 40px;
 }
 
 #contact_us{
@@ -194,18 +191,29 @@ nav{
     cursor: pointer;
 }
 
+@media screen and (max-width : 584px) {
+    #intro h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width : 446px) {
+    #intro h1{
+        font-size: 1.3rem;
+    }
+}
+
 /* ************************************** slider ********************************** */
 
 #slider{
     /* border: 2px solid red; */
-    width: 80%;
-    height: 600px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #slider img{
-    width: 100%;
-    height: 100%;
+    margin: auto;
 }
 
 

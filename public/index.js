@@ -1,10 +1,20 @@
 let contact = document.getElementsByClassName('contact');
-console.log(contact);
 for(let i=0; i<contact.length; i++){
     contact[i].addEventListener('click', ()=>{
         document.getElementById('contact_info').scrollIntoView();
     })
 }
+
+let image = document.querySelector('#slider img');
+let cont = document.getElementById('slider');
+let height = image.clientHeight;
+let width = image.clientWidth;
+
+if(width >= cont.clientWidth){
+    image.style.width = (cont.clientWidth-50) + 'px';
+    image.style.height = ((height*(cont.clientWidth-50))/width) + 'px';
+}
+
 
 
 let submit = document.getElementById('submit');
