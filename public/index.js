@@ -1,20 +1,24 @@
+let type = document.querySelector('#box1 p');
+let text = type.innerHTML;
+type.innerHTML = "";
+let i = 0;
+let isIncrease = 1;
+function typewriter(){
+    if(i<text.length){
+        type.innerHTML += text[i];
+        i++;
+        setTimeout(typewriter, 120);
+    }
+}
+
+typewriter();
+
 let contact = document.getElementsByClassName('contact');
 for(let i=0; i<contact.length; i++){
     contact[i].addEventListener('click', ()=>{
         document.getElementById('contact_info').scrollIntoView();
     })
 }
-
-let image = document.querySelector('#slider img');
-let cont = document.getElementById('slider');
-let height = image.clientHeight;
-let width = image.clientWidth;
-
-if(width >= cont.clientWidth){
-    image.style.width = (cont.clientWidth-50) + 'px';
-    image.style.height = ((height*(cont.clientWidth-50))/width) + 'px';
-}
-
 
 
 let submit = document.getElementById('submit');

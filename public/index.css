@@ -2,7 +2,7 @@
     margin: 0px 0px;
     padding: 0px 0px;
     box-sizing: border-box;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 html {
@@ -22,7 +22,7 @@ nav{
 #navbar{
     /* border: 2px solid red; */
     background-color: white;
-    padding: 5px 5px;
+    padding: 5px 10px;
     box-shadow: 1px 1px 10px rgb(117, 114, 114);
     display: flex;
     justify-content: space-between;
@@ -165,160 +165,209 @@ nav{
 
 #intro{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 2px solid red; */
+    padding: 40px 40px;
+    /* background-color: rgb(255, 248, 255); */
+}
+
+#box1{
+    /* border: 2px solid red; */
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 300px;
-    z-index: 5;
+    width: 50vw;
+    padding: 50px 20px;
 }
 
-#intro p{
+#box1 p:nth-child(1){
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+#box1 p:nth-child(2){
+    font-size: 1.2rem;
+}
+
+#intro img{
+    width: 40vw; 
+} 
+
+@media screen and (max-width : 799px) {
+    #box1{
+        padding: 10px 0px;
+        align-items: center;
+        width: 100vw;
+    }
+    #box1 p:nth-child(1){
+        font-size: 1.34rem;
+        padding-bottom: 20px;
+    }
+    
+    #box1 p:nth-child(2){
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #intro img{
+        width: 80vw;
+    }
+}
+
+/* ******************************* our clients ****************************** */
+
+#clients{
+    /* border: 2px solid red; */
+    padding: 40px 0px;
+    background-color: rgb(249, 252, 255);
+}
+
+#clients p{
     text-align: center;
-    margin: 20px 40px;
+    font-size: 2rem;
+    padding-bottom: 50px;
 }
 
-#contact_us{
-    width: 100px;
-    height: 40px;
-    font-size: 1.07rem;
-    background-color: rgb(6, 95, 95);
-    color: white;
-    border: none;
-    border-radius: 5px;
+#companies{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#contact_us:hover{
-    cursor: pointer;
-}
-
-@media screen and (max-width : 584px) {
-    #intro h1{
-        font-size: 1.4rem;
-    }
-}
-
-@media screen and (max-width : 446px) {
-    #intro h1{
-        font-size: 1.3rem;
-    }
-}
-
-/* ************************************** slider ********************************** */
-
-#slider{
+#companies div{
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 200px;
 }
 
-/* #slider img{
-    margin: auto;
-} */
+#companies div:hover{
+    background-color: white;
+}
+
+
+#companies div img{
+    width: 50%;
+}
+
+@media screen and (max-width: 999px) {
+    #companies div{
+        width: 200px;
+        height: 100px;
+    }
+    #companies div img{
+        width: 80%;
+    }
+    #clients{
+        padding: 40px 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #companies div{
+        width: 150px;
+    }
+}
 
 
 /* ************************************ contact Us ********************************* */
 
-#contact_info{
-    overflow: hidden;
-    height: 600px;
-}
-
 #Contact_page{
-    /* border: 2px solid red; */
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    background-color: rgb(255 245 232);
-    padding: 50px 20px;
-    height: 300px;
-    padding: 40px 60px;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: rgb(253, 251, 247);
+    justify-content: center;
 }
 
-#demo #p1{
-    font-size: 2rem;
-    margin-bottom: 15px;
+#demo{
+    /* border: 2px solid black; */
+    width: 50%;
+    padding: 40px 10px;
 }
 
-#demo #p2{
-    font-size: 1rem;
+#demo p{
+    padding: 5px 10px;
 }
 
-#demo #number{
+#p1{
+    font-size: 1.3rem;
+}
+
+#number{
     display: flex;
-    /* justify-content: center; */
-    margin-top: 30px;
     align-items: center;
 }
 
-#demo #number img{
-    width: 80px;
-    margin-right: 20px;
+#number img{
+    width: 50px;
+    padding: 2px 2px;
 }
 
-#demo #number span{
-    font-size: 1.5rem;
+#form_box{
+    /* border: 2px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #form_container{
+    /* border: 2px solid black; */
+    width: 400px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 50px 80px;
-    background-color: #e7ace7;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px black;
+    padding-bottom: 30px;
     background-color: white;
-    height: 500px;
-    box-shadow: 2px 2px 10px black;
 }
 
-#form_container p{
-    font-size: 2rem;
-    margin-bottom: 30px;
-    /* color: white; */
+input:focus, textarea:focus{
+    outline: none;
 }
 
 #form_container form{
+    /* border: 2px solid red; */
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#form_container p{
+    font-size: 1.5rem;
+    margin: 30px 0px;
 }
 
 #form_container form input{
-    width: 300px;
-    height: 40px;
-    margin: 10px 0px;
-    padding: 3px 5px;
-    font-size: 1.03rem;
-    border: 1px solid black;
-}
-
-#form_container form input:focus, #form_container form textarea:focus{
-    border: 1px solid blue;
-    color: blue;
-    outline: none;
+    width: 80%;
+    height: 35px;
+    margin: 7px 0px;
+    padding: 2px 2px;
 }
 
 #form_container form textarea{
-    height: 60px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 10px 5px;
-    font-size: 1.03rem;
-    border: 1px solid black;
-}
-
-input:focus, textarea:focus, select:focus{
-    outline: none;
+    width: 80%;
+    padding: 2px 2px;
+    margin: 5px 0px;
+    height: 50px;
 }
 
 #form_container form button{
-    width: 200px;
-    margin: auto;
-    height: 40px;
+    width: 40%;
+    height: 30px;
+    margin: 20px 0px;
     border: none;
-    font-size: 1.03rem;
-    /* background-color: #630663; */
-    background-color: rgb(196, 131, 11);
+    background-color: rgb(139, 116, 13);
     color: white;
 }
 
@@ -326,13 +375,45 @@ input:focus, textarea:focus, select:focus{
     cursor: pointer;
 }
 
+@media screen and (max-width: 886px) {
+    #Contact_page{
+        padding: 30px 10px;
+    }
+    #form_container{
+        width: 100%;
+    }
+    #demo{
+        width: 40%;
+    }
+    #from_box{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #demo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #demo p{
+        margin: 4px 0px;
+    }
+    #form_box{
+        width: 100%;
+    }
+    #form_container{
+        width: 320px;
+    }
+}
+
 
 /* ************************************ details ************************************** */
 
 .details{
-    /* border: 2px solid red; */
     padding: 50px 50px;
-    /* background-color: rgb(236, 247, 247); */
     background-color: rgb(253, 251, 247);
     display: flex;
     justify-content: space-between;
@@ -349,7 +430,6 @@ input:focus, textarea:focus, select:focus{
 }
 
 #timings{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,4 +450,16 @@ input:focus, textarea:focus, select:focus{
 
 #timings table tr td{
     width: 150px;
+}
+
+@media screen and (max-width: 796px) {
+    .details{
+        justify-content: center;
+    }
+    #map{
+        width: 100%;
+    }
+    #timings{
+        width: 100%;
+    }
 }

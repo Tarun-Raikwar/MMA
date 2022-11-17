@@ -18,8 +18,8 @@ app.post('/customer_query', (req, res)=>{
     let message = req.body.message;
     let response = [1, 1, 1, 1];
     if(name.length == 0) response[0] = 0;
-    for(let i=0; i<name.lengt; i++){
-        if(name[i] >= '0' && nome[i] <= '9'){
+    for(let i=0; i<name.length; i++){
+        if(name[i] >= '0' && name[i] <= '9'){
             response[0] = 0;
             break;
         }
@@ -46,7 +46,7 @@ app.post('/customer_query', (req, res)=>{
         
         var mailOptions = {
             from: 'taruntestemail057@gmail.com',
-            to: 'mastermanagementassociate@gmail.com',
+            to: 'kapil.sangwan.ug20@nsut.ac.in',
             subject: "Customer Query",
             text: ('Name : ' + name + '\n' + 'contact no. : ' + '\n' + phone + '\n' + 'Email : ' + email + '\n' + 'message : ' + message)
         };
