@@ -167,8 +167,8 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* border: 2px solid red; */
-    padding: 40px 40px;
+    border: 2px solid red;
+    padding: 40px 10px;
     /* background-color: rgb(255, 248, 255); */
 }
 
