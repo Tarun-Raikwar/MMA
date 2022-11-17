@@ -201,7 +201,7 @@ nav{
         width: 100vw;
     }
     #box1 p:nth-child(1){
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         padding-bottom: 20px;
     }
     
@@ -413,7 +413,7 @@ input:focus, textarea:focus{
 /* ************************************ details ************************************** */
 
 .details{
-    padding: 50px 50px;
+    padding: 30px;
     background-color: rgb(253, 251, 247);
     display: flex;
     justify-content: space-between;
