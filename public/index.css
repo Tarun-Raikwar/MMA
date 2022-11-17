@@ -167,7 +167,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 40px 10px;
     /* background-color: rgb(255, 248, 255); */
 }
@@ -201,7 +201,7 @@ nav{
         width: 100vw;
     }
     #box1 p:nth-child(1){
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         padding-bottom: 20px;
     }
     
