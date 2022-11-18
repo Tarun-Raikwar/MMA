@@ -134,6 +134,7 @@ nav{
     left: 0px;
     width: 100%;
     background-color: white;
+    box-shadow:  1px 10px rgb(117, 114, 114);
 }
 .side_comp{
     width: 100%;
