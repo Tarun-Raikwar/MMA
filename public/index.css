@@ -129,7 +129,7 @@ nav{
 
 #sidebar{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 0px;
     width: 100%;
