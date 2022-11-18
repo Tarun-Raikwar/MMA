@@ -128,20 +128,19 @@ nav{
 /* ******************************  sidebar ************************ */
 
 #sidebar{
-    /* border: 2px solid red; */
     display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0px 1px -1px black;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
 }
 .side_comp{
     width: 100%;
-    /* border: 2px solid black; */
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px;
     text-decoration: none;
     color: black;
     padding: 8px 8px;
@@ -159,7 +158,6 @@ nav{
     background-color: rgb(9, 110, 110);
     color: white;
 }
-
 
 /* ******************************************* intro ************************************** */
 
@@ -226,7 +224,7 @@ nav{
 
 #clients p{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding-bottom: 50px;
 }
 
@@ -248,11 +246,11 @@ nav{
 
 #companies div:hover{
     background-color: white;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
-
 #companies div img{
-    width: 50%;
+    width: 60%;
 }
 
 @media screen and (max-width: 999px) {
@@ -261,7 +259,7 @@ nav{
         height: 100px;
     }
     #companies div img{
-        width: 80%;
+        width: 70%;
     }
     #clients{
         padding: 40px 0px;
