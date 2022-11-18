@@ -39,7 +39,7 @@ dropdown.addEventListener('click', ()=>{
     let sidebar = document.getElementById('sidebar');
     if(sidebar.style.display == 'block'){
         sidebar.style.display = 'none';
-        document.getElementById('navbar').style.boxShadow = "1px 1px 10px rgb(117, 114, 114)";
+        document.getElementById('navbar').style.boxShadow = "1px 1px 10px 1px rgb(117, 114, 114)";
     }
     else{
         sidebar.style.display = 'block';
