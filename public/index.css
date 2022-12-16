@@ -245,11 +245,6 @@ nav{
     height: 200px;
 }
 
-#companies div:hover{
-    background-color: white;
-    box-shadow: 1px 1px 10px 1px black;
-}
-
 #companies div img{
     width: 60%;
 }
@@ -295,12 +290,16 @@ nav{
 }
 
 #p1{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #number{
     display: flex;
     align-items: center;
+}
+
+#number span{
+    margin-left: 5px;
 }
 
 #number img{
@@ -312,19 +311,18 @@ nav{
     /* border: 2px solid black; */
     width: 50%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #form_container{
     /* border: 2px solid black; */
-    width: 400px;
+    width: 370px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 10px 1px black;
+    box-shadow: 1px 0px 5px 1px black;
     padding-bottom: 30px;
     background-color: white;
 }
@@ -352,6 +350,7 @@ input:focus, textarea:focus{
     height: 35px;
     margin: 7px 0px;
     padding: 2px 2px;
+    font-size: 1rem;
 }
 
 #form_container form textarea{
@@ -359,6 +358,7 @@ input:focus, textarea:focus{
     padding: 2px 2px;
     margin: 5px 0px;
     height: 50px;
+    font-size: 1rem;
 }
 
 #form_container form button{
